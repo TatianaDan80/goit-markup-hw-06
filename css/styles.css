@@ -248,18 +248,16 @@ img {
     padding-right: 16px;
   }
   .features {
-    display: flex;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .features-item {
-    width: calc((100%-3 * 24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0;
     border-top: none;
   }
   .features {
