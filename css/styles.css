@@ -238,61 +238,58 @@ img {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  /* border-top: none;
-  max-width: 1440px; */
 }
+
 @media screen and (min-width: 786px) {
   .container {
-    max-width: 768px;
+    max-width: 786px;
     padding-left: 16px;
     padding-right: 16px;
   }
-  .features {
-    gap: 72px 24px;
+
+  .features-item {
+    gap: 24px 72px;
   }
+
   .features-item {
     width: calc((100% - 24px) / 2);
   }
 }
+
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
-    padding: 0;
+    width: 846px;
     border-top: none;
   }
   .features {
-    background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
     gap: 24px;
   }
+
   .features-item {
-    width: 100%;
     width: calc((100%-3 * 24px) / 4);
   }
-  .frame-icon {
-    background: #f4f4fd;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    display: flex;
-    justify-content: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-bottom: 8px;
-    align-items: center;
-  }
-  .features-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
-  }
 }
-
+.frame-icon {
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.features-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -310,13 +307,11 @@ img {
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
-  gap: 72px;
+  gap: 72px 24px;
 }
 
 .features-item {
   width: 100%;
-  /* width: calc((100%-3 * 24px) / 4); */
 }
 
 .frame-icon {
@@ -326,7 +321,6 @@ img {
   width: 264px;
   height: 112px;
   display: none;
-  /* display: flex; */
   justify-content: center;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -344,10 +338,6 @@ img {
   line-height: 111%;
   letter-spacing: 0.02em;
   text-align: center;
-  /* font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0.02em; */
   color: #2e2f42;
   margin-bottom: 8px;
 }
