@@ -28,8 +28,6 @@ ol {
 .container {
   max-width: 320px;
   padding: 0 16px;
-  /* width: 1158px;
-  padding: 0 15px; */
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -239,13 +237,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 786px) {
-  .container {
-    max-width: 786px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 
 .frame-icon {
   background: #f4f4fd;
@@ -327,14 +318,17 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 786px;
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
   .features-item {
     width: calc((100% - 24px) / 2);
+  }
+  .features-subtitle {
+    text-align: left;
   }
 }
 
@@ -352,15 +346,26 @@ img {
   }
 
   .features-item {
-    width: calc((100%-3 * 24px) / 4);
+    width: calc((100% - 3 * 24px) / 4);
   }
 
   .frame-icon {
     display: flex;
   }
+
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+  }
 }
 
 /*-----portfolio-------*/
+.container {
+  max-width: 320px;
+  padding-top: 96px;
+  padding-bottom: 16px;
+}
 
 .portfolio {
   background-color: #f4f4fd;
@@ -391,7 +396,8 @@ img {
 
 .portfolio-img-list {
   background: #fff;
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: 100%; */
+  /* width: calc((100% - 3 * 24px) / 4); */
   border-radius: 0px 0px 4px 4px;
   width: 264px;
   height: 428px;
