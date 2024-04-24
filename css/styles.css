@@ -362,14 +362,15 @@ img {
 
 /*-----portfolio-------*/
 .container {
-  max-width: 320px;
+  max-width: 296px;
   padding-top: 96px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767pх) {
   .container {
-    max-width: 768px;
-    padding-top: 96px 0;
+    width: 584px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -408,6 +409,7 @@ img {
 
 .portfolio-img-list {
   background: #fff;
+  margin-bottom: 72px;
   /* width: calc((100% - 24px) / 4); */
   border-radius: 0px 0px 4px 4px;
   width: 264px;
@@ -478,17 +480,22 @@ img {
   padding: 32px 0;
 }
 @media screen and (min-width: 768px) {
+  .portfolio-title {
+    margin-bottom: 48px;
+  }
+  .portfolio-imag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
   .portfolio-img-list {
-    gap: 24px 64px;
+    width: calc((100% - 24px) / 2);
   }
 }
 @media screen and (min-width: 1158px) {
   .portfolio-img-list {
     width: calc((100% - 3 * 24px) / 4);
-  }
-  .portfolio-imag {
-    display: flex;
-    gap: 24px;
   }
 }
 
