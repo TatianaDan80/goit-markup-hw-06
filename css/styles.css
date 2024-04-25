@@ -274,7 +274,7 @@ img {
 @media screen and (min-width: 1158px) {
   .hero {
     padding-top: 188px;
-    max-width: 1140px;
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -441,7 +441,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
-    width: 584px;
+    /* width: 584px; */
     /* padding-top: 96px;
     padding-bottom: 96px; */
   }
@@ -588,10 +588,13 @@ img {
 /*-----funktional--------*/
 
 .funkcional {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
 .funkcional-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -614,9 +617,11 @@ img {
 }
 
 .portfolio-container {
+  width: 288px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding: 32px 16px;
+  margin: 0 auto;
+  padding: 96px 16px;
 }
 
 .funkcional-image {
@@ -631,17 +636,20 @@ img {
   row-gap: 48px;
 }
 
-.funkcional-menu-list:hover {
-  font: 400 16px / 150% "Roboto", sans-serif;
-  letter-spacing: 0.02em;
-  color: #434455;
-  width: calc((100% - 48px) / 3);
-  position: relative;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.funkcional-menu-list {
+  width: 288px;
+  margin: 0 auto;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.funkcional-menu-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 .fn-cover-wrap {
   position: relative;
   overflow: hidden;
@@ -663,11 +671,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.funkcional-menu-list:hover .fn-cover-text {
-  transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
 }
 
+@media screen and (min-width: 1158px) {
+}
 /*----footer------*/
 
 .footer-f {
