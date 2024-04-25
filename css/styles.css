@@ -169,13 +169,13 @@ ol {
 
 .hero {
   background-color: #2e2f42;
-  padding: 188px 0;
-  max-width: 1440px;
+  padding: 72px 0;
+  max-width: 320px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/pipl.jpg);
+    url(../images/fon-mob-1x-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -183,25 +183,36 @@ ol {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
+@media screen and (webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/fon-mob-2x-min.jpg);
+  }
+}
 .hero-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 107%;
+  font-size: 36px;
+  line-height: 111%;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   margin: auto;
-  max-width: 496px;
+  max-width: 216px;
   margin-bottom: 48px;
 }
 
 .hero-btn {
   cursor: pointer;
   border-radius: 4px;
-  min-width: 169px;
+  width: 169px;
   height: 56px;
+  padding: 16px 32px;
   background: #4d5ae5;
   font: "Roboto";
   letter-spacing: 0.04em;
@@ -226,6 +237,65 @@ img {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/fon-tab-1x-min.jpg);
+  }
+  @media screen and (webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/fon-tab-2x-min.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    max-width: 1140px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/pipl.jpg);
+  }
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+  }
+  @media screen and (webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office\ 1-min.jpg);
+    }
+  }
 }
 
 /*----features--------*/
@@ -366,7 +436,7 @@ img {
   padding-top: 96px 0;
 }
 
-@media screen and (max-width: 767pх) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     width: 584px;
     padding-top: 96px;
@@ -482,7 +552,7 @@ img {
   text-align: center;
   padding: 32px 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .portfolio-title {
     margin-bottom: 48px;
   }
