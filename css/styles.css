@@ -721,7 +721,7 @@ img {
 /*----footer------*/
 
 .footer-f {
-  max-width: 320px;
+  /* max-width: 320px; */
   background: #2e2f42;
   padding: 96px 0;
 }
@@ -896,6 +896,47 @@ img {
 
 .footer-btn:hover {
   background-color: #404bbf;
+}
+@media screen and (min-width: 768px) {
+  .footer-title {
+    width: 584px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .soc-footer {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .soc-conteiner {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer-text {
+    text-align: start;
+  }
+  .ft-form-label {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-f {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-title {
+    width: 1158px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 /*------modal-----*/
