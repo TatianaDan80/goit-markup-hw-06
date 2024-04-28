@@ -339,7 +339,7 @@ ol {
   height: 56px;
   padding: 16px 32px;
   background: #4d5ae5;
-  font: "Roboto";
+  font-family: "Roboto";
   letter-spacing: 0.04em;
   color: #fff;
   border: none;
@@ -691,7 +691,7 @@ img {
     gap: 64px 24px;
   }
   .portfolio-img-list {
-    /* width: calc((100% - 24px) / 2); */
+    width: calc((100% - 24px) / 2);
   }
   .test-image {
     /* width: 100%; */
