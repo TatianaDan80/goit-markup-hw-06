@@ -70,61 +70,63 @@
             <li><a class="menu-nav-links" href="">Contacts</a></li>
           </ul>
         </nav>
-        <address class="menu-address">
-          <ul class="menu-address-list">
-            <li>
-              <a class="menu-address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+        <div class="menu-contact">
+          <address class="menu-address">
+            <ul class="menu-address-list">
+              <li>
+                <a class="menu-address-linkc" href="tel:110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="menu-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-icon-list">
+            <li class="menu-icon-item">
+              <a href="" class="menu-icon-link">
+                <svg class="menu-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a class="menu-address-link" href="tel:110001111111"
-                >+11 (000) 111-11-11</a
-              >
+            <li class="menu-icon-item">
+              <a href="" class="menu-icon-link">
+                <svg class="menu-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-item">
+              <a href="" class="menu-icon-link">
+                <svg class="menu-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-item">
+              <a href="" class="menu-icon-link">
+                <svg class="menu-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-        <ul class="menu-icon-list">
-          <li class="menu-icon-item">
-            <a href="" class="menu-icon-link">
-              <svg class="menu-icon-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="menu-icon-item">
-            <a href="" class="menu-icon-link">
-              <svg class="menu-icon-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="menu-icon-item">
-            <a href="" class="menu-icon-link">
-              <svg class="menu-icon-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="menu-icon-item">
-            <a href="" class="menu-icon-link">
-              <svg class="menu-icon-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="features section">
+      <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="features">
@@ -181,8 +183,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="portfolio section">
+      </section>
+      <section class="portfolio section">
         <div class="container team-container">
           <h2 class="portfolio-title">Our Team</h2>
           <ul class="portfolio-imag">
@@ -358,9 +360,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="funkcional section">
+      <section class="funkcional section">
         <div class="container">
           <h2 class="funkcional-title">Our Portfolio</h2>
           <ul class="funkcional-menu">
@@ -409,7 +411,7 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/tel-1x-dsk-min.jpg 1x,
+                      ./images/imgtel.jpg         1x,
                       ./images/tel-2x-dsk-min.jpg 2x
                     "
                     media="(min-width:1158px)"
@@ -601,12 +603,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- footer -->
 
-    <!-- <footer class="footer-f">
+    <footer class="footer-f">
       <div class="container footer-title">
         <div class="soc-footer">
           <a class="logo logot" href="./index.html"
@@ -670,11 +672,11 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- modal -->
 
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -728,8 +730,10 @@
               </svg>
             </div>
           </div>
+
           <!-- textArea -->
-    <!-- <div class="modal-fild m-fild">
+
+          <div class="modal-fild m-fild">
             <label for="user-comment" class="modal-label">Comment</label>
             <textarea
               name="user-comment"
@@ -759,6 +763,6 @@
           <button class="modal-sent-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>  -->
+    </div>
   </body>
 </html>
