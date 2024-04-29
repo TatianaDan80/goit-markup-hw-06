@@ -70,7 +70,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding: 17px 0;
+  /* padding: 17px 0; */
 }
 
 .logo-part {
@@ -557,16 +557,11 @@ img {
 
 /*-----portfolio-------*/
 .container {
-  max-width: 296px;
+  /* max-width: 296px; */
   padding-top: 96px 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .container {
-    /* width: 584px; */
-    /* padding-top: 96px;
-    padding-bottom: 96px; */
-  }
   .team-container {
     max-width: 584px;
   }
@@ -694,7 +689,7 @@ img {
     width: calc((100% - 24px) / 2);
   }
   .test-image {
-    /* width: 100%; */
+    width: 100%;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -739,7 +734,7 @@ img {
 }
 
 .portfolio-container {
-  width: 288px;
+  /* width: 288px; */
   border: 1px solid #e7e9fc;
   border-top: none;
   margin: 0 auto;
@@ -795,8 +790,8 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-container {
-    width: 736px;
+  .soc-container {
+    /* width: 736px; */
   }
   .funkcional-menu {
     flex-wrap: wrap;
@@ -858,11 +853,12 @@ img {
 .soc-footer {
   display: flex;
   max-width: 288px;
-  margin-bottom: 72px;
+  margin-right: 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  padding-bottom: 72px;
 }
 
 .logo {
@@ -880,12 +876,8 @@ img {
   color: #f4f4fd;
 }
 
-/* .logot {
-  margin-bottom: 16px;
-} */
-
 .footer-f-tx {
-  width: 288px;
+  max-width: 264px;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
